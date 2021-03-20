@@ -24,6 +24,7 @@
     <ProjectGuid>{4841c1b5-a0cd-4b5e-90c3-3c0fb5bee552}</ProjectGuid>
     <RootNamespace>c11bind</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C++11_bind</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

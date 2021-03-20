@@ -24,7 +24,7 @@
     <ProjectGuid>{2f92ef88-95e1-4e4c-86f5-15c266375fc1}</ProjectGuid>
     <RootNamespace>Exception</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>exception</ProjectName>
+    <ProjectName>Exception</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

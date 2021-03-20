@@ -24,6 +24,7 @@
     <ProjectGuid>{0403e3cd-1cd6-4c10-9a3d-b2e658fd85d7}</ProjectGuid>
     <RootNamespace>lambdaprctice</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lambda</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

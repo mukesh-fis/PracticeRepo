@@ -24,7 +24,7 @@
     <ProjectGuid>{c2d0f0bd-c1a1-468d-b70f-127cad37c274}</ProjectGuid>
     <RootNamespace>constexprdecltype</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>string</ProjectName>
+    <ProjectName>String</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
