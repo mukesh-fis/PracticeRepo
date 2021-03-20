@@ -1,32 +1,68 @@
-# Prerequisites
-*.d
+#This is an example of the .gitignore file:
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Ignore unessential files
 *.obj
-
-# Precompiled Headers
-*.gch
+*.pdb
+*.cache
+*.ncb
 *.pch
+*.suo
+*.jar
+*.class
+*.eap
+*.ilk
+*.log
+*.sbr
+*.log
+*.res
+*.idb
+.signature.p7s
+UpgradeLog.htm
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
+dlldata.c
+site.h
+site_i.c
+site_p.c
+regsvr32.trg
+site.exp
+site.lib
+Thumbs.db
+*.ink
+FProc.h
+*.opt
+*.plg
+*.tlh
+*.bsc
+*.map
+*.tli
+*.asm
+FProc_i.c
+*.nupkg
+package-icon.png
+*.~sql 
+
+
+# Ignore exe and dll files (LIB files are allowed)
+*.exe
 *.dll
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Ignore obj/release/other unessential folders
+obj
+.vs
+Release
+Debug
+bin
+lib
 
-# Executables
-*.exe
-*.out
-*.app
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache
+
+# Ignore Harvest sig files
+*.sig
+
+# Ignore Build upgrade files
+UpgradeLog*.htm
