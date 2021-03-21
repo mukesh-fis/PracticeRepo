@@ -1,4 +1,5 @@
 // FindMoveToMakeArraySpecial.cpp : This file contains the 'main' function. Program execution begins and ends there.
+
 /*
 Given an integer array arr of length N and an integer X,
 the task is to find the minimum number of array elements to be replaced by a value from the range [1, X]
@@ -103,8 +104,6 @@ int FindMoveToMakeArraySpecial(int A[], int N, int X)
     // Return the answer 
     return ans;
 }
-
-
 
 
 void main()

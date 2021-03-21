@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{57f994a4-95fe-4e4b-b3b3-84d06d7c43fc}</ProjectGuid>
-    <RootNamespace>ReadingUnknownNumOfInput</RootNamespace>
+    <ProjectGuid>{440b3ef3-36d4-42ca-8677-d60caba315b6}</ProjectGuid>
+    <RootNamespace>My04ConstantExpressionsconstexpr</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>00_ReadingUnknownNumOfInput</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReadingUnknownNumOfInput.cpp" />
+    <ClCompile Include="04_ConstantExpressions(constexpr).cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

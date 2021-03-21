@@ -32,6 +32,13 @@ int main()
     std::cout << "Expression involving unsigned types can give surprising results" << endl;
     std::cout << "==========================================================\n";
 
+
+    /*
+    Note 1:
+    When we use both unsigned and int in an arithmetic expression, int value ordinarily gets converted to unsigned.
+    To calculate u + i or i + u,
+    i = -42 gets converted to unsigned value which is 4294967254 and adding u - 10 yields the result shown
+    */
     int i = -42;
     unsigned u = 10;
     cout << "i + i = " << i + i << endl;
@@ -40,20 +47,42 @@ int main()
     cout << "u + i = " << u + i << endl;
 
     /*
-
     Output:
     i + i = -84
     u + u = 20
     i + u = 4294967264   
     u + i = 4294967264
+    /
 
-    Note:
-    When we use both unsigned and int in an arithmetic expression, int value ordinarily gets converted to unsigned.
-    To calculate u + i or i + u, 
-    i = -42 gets converted to unsigned value which is 4294967254 and adding u - 10 yields the result shown
+    /*
+    Note 2:
+    If we subtract a value from an unsigned, we must be sure that result cannot be nagative, it wraps around. Example below:
     */
 
-    getchar();
+    unsigned u1 = 10, u2 = 30;
+    cout << "u1 + u2 = " << u1 + u2 << endl;
+    cout << "u1 - u2 = " << u1 - u2 << endl;
+
+    /*
+    Note 3:
+    The fact that unsigned cannot be les than 0 also affects the fact how we write loops.  Example below:
+        for (int i = 10; i >= 0; --i)
+            cout << i << endl;
+
+    If we write the above loop using unsgned counter instead of int, it will turn into an infinite loop
+        for (unsigned i = 10; i >= 0; --i)
+            cout << i << endl;
+
+    The correct way for this loop could be to change the condition to i > 0 so that i never becomes equal to 0
+    when checking loop entry condition.
+        for (unsigned i = 11; i > 0; --i)
+            cout << i << endl;
+
+    Another way to write this loop correctly could be to use while instead of for because while allows us to decrement before using
+
+    */
+
+    //getchar();
     return 0;
 }
 

@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{57f994a4-95fe-4e4b-b3b3-84d06d7c43fc}</ProjectGuid>
-    <RootNamespace>ReadingUnknownNumOfInput</RootNamespace>
+    <ProjectGuid>{94152c09-7776-49c4-9962-8640299ade4a}</ProjectGuid>
+    <RootNamespace>SpecialArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>00_ReadingUnknownNumOfInput</ProjectName>
+    <ProjectName>06_SpecialArray</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ReadingUnknownNumOfInput.cpp" />
+    <ClCompile Include="SpecialArray.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

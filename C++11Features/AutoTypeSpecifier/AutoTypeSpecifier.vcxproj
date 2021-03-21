@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{94152c09-7776-49c4-9962-8640299ade4a}</ProjectGuid>
-    <RootNamespace>SpecialArray</RootNamespace>
+    <ProjectGuid>{8b7b6903-5afd-4df6-907a-15b75d546c51}</ProjectGuid>
+    <RootNamespace>AutoTypeSpecifier</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>08_ Auto and decltype TypeSpecifier</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SpecialArray.cpp" />
+    <ClCompile Include="AutoTypeSpecifier.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
