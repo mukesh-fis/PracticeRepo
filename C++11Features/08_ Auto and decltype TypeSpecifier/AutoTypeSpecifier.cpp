@@ -59,7 +59,42 @@ int main()
     a variable defined as a reference is not treated as a synonym for the object to which it refers
     */
 
+    /*
+    decltype and references
+    when applied to an expression decltype gives the type of the expression. But some expressions will cause
+    decltype to yield a reference type. This happens when the expression yields objects that can stand on the left hand side
+    of the assignment. Example:
+    */
+    int ii = 42, * pii = &ii, & rii = ii;
+    decltype(rii + 0) b; //addition with rii yields an int, so b is an uninitialized int.
+    //decltype(*pii) c; // error - c is int& and must be initialized. 
+    decltype(*pii + 0) d; //if we add a number to the deduced ref type, we now get the value type that is int not int& so this statement is valid. 
 
+    /*
+    In the above example, r is a refernce, so decltype(r) is a reference type.
+    If we want the type to which r refers, we may add a number like (r + 0) here to r, then decltype will yield the value type 
+    which is a non-reference type.
+    When we use decltype(*pii), the dereference operator with decltype yields a reference type,
+    so decltype(*pii) yields int& and not plain int.
+    if we add a number to the deduced ref type, we now get the value type that is int not int& so this statement is valid.
+    This the type for d is int while the type for c was int&.
 
+    Another Note:
+    If we apply decltype to a variable without without parenthesis, we get the type of that variable 
+    but when we warp up the variable in additional set of parenthesis inside decltype, we get reference type.
+
+    so, decltype((variable)) yields reference type while decltype(variable) yields value type.
+    Example:
+    
+    */
+
+    decltype(ii) e; //e is int type
+    //decltype((ii)) f; //f is int& type and hence must be initialized. 
+
+    /*
+     Another point to note is that - Assignment is an example of an expression that yields reference type.
+     The type is areference to the type of the left hand operand. So if ii is an int, then decltype(ii = x) is int& type.
+    */
+    decltype(ii = 30) g; //Here the type deduced for g is int& and hence must be initialized.
 }
 

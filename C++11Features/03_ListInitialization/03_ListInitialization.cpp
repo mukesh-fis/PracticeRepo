@@ -60,7 +60,18 @@ int main()
     Variables must be defined exactly once but may be declared many times.
     */
 
+    /*
+    Note 6:
+    List Initialization for data members:
+    -------------------------------------
+    Under the new standard c++11, we can supply an in-class initializers for a data member.
+    When we create objects, the in-class initializers will be used to initialize the data members. 
+    Members without an initializer are default initialized. 
 
+    The in-class initializers are restricted as to the form we can use. 
+    They must either be enclosed inside curly braces or follow an = sign. 
+    We may not specify in-class initializer inside parenthesis.
+    */
 
 
 }
