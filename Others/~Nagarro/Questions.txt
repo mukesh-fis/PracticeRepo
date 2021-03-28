@@ -1,9 +1,9 @@
 Q. 1:
 
-You’re given a m x m matrix. Write a function to rotate submatrix within the matrix by 90degree clock wise. Function takes x and y as starting row and column coordinate of matrix and N as size of submatrix as argument. Inplace rotation was required. I gave brute force I.e. With extra memory.
+You’re given a m x m matrix. Write a function to rotate submatrix within the matrix by 90degree clock wise. Function takes x and y as starting row and column coordinate of matrix and N as size of submatrix as argument. Inplace rotation was required. 
 
 Q. 2:
-You are given a sorted array containing both negative and positive values. Resort the array taking absolute value of negative numbers. Your complexity should be O(n)
+You are given a sorted array containing both negative and positive values. Re-sort the array taking absolute value of negative numbers. Your complexity should be O(n)
 
 Ex. A = {-8,-5,-3,-1,3,6,9}
 Output: {-1,-3,3,-5,6,-8,9} 
@@ -20,3 +20,56 @@ Given a text string and a sample string. Find if the characters of the sample st
 
 Eg.. TextString: abcNjhgAhGjhfhAljhRkhgRbhjbevfhO
 Sample string :NAGARRO 
+
+Q.5
+Given an array of size MxN and coordinates of starting of subarray (x, y). You need to rotate that subarray and then print the full array after rotation.
+
+Q.6
+Given a string, say sentence=" this is crazy and fun" and a list, say name=["is", "fun"]. Now you need to capitalize on the first letter of every word in the given string which is not present in the list.
+
+Q.7
+Given three sorted arrays A, B, and C. Write the most efficient algorithm to find the 5th largest element among the three arrays.
+
+Q.8
+Return the character which occurs for the maximum numbers of times in the Input String.
+If multiple characters occur with the same highest frequency then return "0".
+Input : Input1: abcdd
+
+Q.9
+A prime number is a whole number greater than 1 that is divisible only by itself and the number 1.
+
+Given 'n' (1 <= n <= 100000), find the nth prime number.
+Input : An integer n
+
+Q. 10
+A Derangement is a permutation of n elements, such that no element appears in its original position. For example, a derangement of {0, 1, 2, 3} is {2, 3, 1, 0}.
+
+Given a number n, find the total number of Derangements of a set of n elements.
+Input : 1st Input: n = 2
+
+For two elements say {0, 1}, there is only one
+possible derangement {1, 0}
+
+2nd Input: n = 3
+
+For three elements say {0, 1, 2}, there are two
+possible derangements {2, 0, 1} and {1, 2, 0}
+
+
+Q.11
+Every character in the input string is followed by its frequency.
+Write a function to decrypt the string and find the nth character of the decrypted string. If no character exists at that positionthen then return "-1".
+For eg:- If the input string is "a2b3" the decrypted string is "aabbb".
+Note: The frequency of encrypted string cannot be greater than a single digit i.e.<10.
+
+Explanation:
+
+The decrypted string is "abccc", hence the 5th character in the decrypted string is "c".
+Input : Input Specification:
+Input1: A string.
+Input2:5
+
+Q.12
+Given a number of objects N(non-repetitive object) Find the number of arrangements in which no objects occur at original positions.
+Input : Input1: N, the number of Objects.
+Input1: 3

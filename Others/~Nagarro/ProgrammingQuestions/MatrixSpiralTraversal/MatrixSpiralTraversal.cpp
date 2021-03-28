@@ -51,7 +51,7 @@ public:
 		int row = 0, col = 0, iter = 0;
 
 
-		while (output.size() < MAXROW * MAXCOL)
+		while (output.size() < size_t(MAXROW * MAXCOL))
 		{
 			printRight(matrix, iter, row, col, MAXROW, MAXCOL);
 			printDown(matrix, iter, row, col, MAXROW, MAXCOL);
@@ -67,7 +67,7 @@ public:
 		int row = 0, col = 0, iter = 0;
 
 
-		while (output.size() < MAXROW * MAXCOL)
+		while (output.size() < size_t(MAXROW * MAXCOL))
 		{
 			for (row = iter, col = iter; col < MAXCOL - iter; col++)
 			{

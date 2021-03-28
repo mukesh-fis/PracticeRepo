@@ -1,20 +1,51 @@
-// CapitalizeFirstLetterOfEachWord.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+/*
+Write a program to convert the first character uppercase in a sentence 
+and if apart from the first character if any other character is in Uppercase then convert into Lowercase?
+*/
 
+// C++ program to convert
+// first character uppercase
+// in a sentence
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main()
+string convert(string str)
 {
-    std::cout << "Hello World!\n";
+	for (int i = 0; i < str.length(); i++)
+	{
+		// If first character of a
+		// word is found
+		if (i == 0 && str[i] != ' ' ||
+			str[i] != ' ' && str[i - 1] == ' ')
+		{
+			// If it is in lower-case
+			if (str[i] >= 'a' && str[i] <= 'z')
+			{
+				// Convert into Upper-case
+				str[i] = (char)(str[i] - 'a' + 'A');
+			}
+		}
+
+		// If apart from first character
+		// Any one is in Upper-case
+		else if (str[i] >= 'A' &&
+				str[i] <= 'Z')
+
+		// Convert into Lower-Case
+		str[i] = (char)(str[i] + 'a' - 'A');
+	}
+
+	return str;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+// Driver code
+int main()
+{
+string str = "gEEks fOr GeeKs";
+std::cout << str << endl;;
+cout << convert(str) << endl;
+return 0;
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+// This code is contributed by Chitranayal

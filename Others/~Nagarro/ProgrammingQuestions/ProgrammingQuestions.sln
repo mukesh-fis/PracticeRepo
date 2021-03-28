@@ -11,6 +11,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixSpiralTraversal", "Ma
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindLinkedListMiddleNode", "FindLinkedListMiddleNode\FindLinkedListMiddleNode.vcxproj", "{8DE16BB1-4E3D-4F04-988A-B22A592844FB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CapitalizeFirstLetterOfEachWord", "CapitalizeFirstLetterOfEachWord\CapitalizeFirstLetterOfEachWord.vcxproj", "{AA225E13-2885-4AAE-920D-973AB1E76C7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindEqualSumInArray", "FindEqualSumInArray\FindEqualSumInArray.vcxproj", "{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixRotationBy90Degree", "MatrixRotationBy90Degree\MatrixRotationBy90Degree.vcxproj", "{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixRotateElementsClockwise", "MatrixRotateElementsClockwise\MatrixRotateElementsClockwise.vcxproj", "{D96AB19F-C28A-4818-A588-31DE2D82A0E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +59,38 @@ Global
 		{8DE16BB1-4E3D-4F04-988A-B22A592844FB}.Release|x64.Build.0 = Release|x64
 		{8DE16BB1-4E3D-4F04-988A-B22A592844FB}.Release|x86.ActiveCfg = Release|Win32
 		{8DE16BB1-4E3D-4F04-988A-B22A592844FB}.Release|x86.Build.0 = Release|Win32
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Debug|x64.ActiveCfg = Debug|x64
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Debug|x64.Build.0 = Debug|x64
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Debug|x86.Build.0 = Debug|Win32
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Release|x64.ActiveCfg = Release|x64
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Release|x64.Build.0 = Release|x64
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Release|x86.ActiveCfg = Release|Win32
+		{AA225E13-2885-4AAE-920D-973AB1E76C7A}.Release|x86.Build.0 = Release|Win32
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Debug|x64.ActiveCfg = Debug|x64
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Debug|x64.Build.0 = Debug|x64
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Debug|x86.ActiveCfg = Debug|Win32
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Debug|x86.Build.0 = Debug|Win32
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Release|x64.ActiveCfg = Release|x64
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Release|x64.Build.0 = Release|x64
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Release|x86.ActiveCfg = Release|Win32
+		{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}.Release|x86.Build.0 = Release|Win32
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Debug|x64.ActiveCfg = Debug|x64
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Debug|x64.Build.0 = Debug|x64
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Debug|x86.ActiveCfg = Debug|Win32
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Debug|x86.Build.0 = Debug|Win32
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Release|x64.ActiveCfg = Release|x64
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Release|x64.Build.0 = Release|x64
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Release|x86.ActiveCfg = Release|Win32
+		{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}.Release|x86.Build.0 = Release|Win32
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Debug|x64.ActiveCfg = Debug|x64
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Debug|x64.Build.0 = Debug|x64
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Debug|x86.Build.0 = Debug|Win32
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Release|x64.ActiveCfg = Release|x64
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Release|x64.Build.0 = Release|x64
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Release|x86.ActiveCfg = Release|Win32
+		{D96AB19F-C28A-4818-A588-31DE2D82A0E0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

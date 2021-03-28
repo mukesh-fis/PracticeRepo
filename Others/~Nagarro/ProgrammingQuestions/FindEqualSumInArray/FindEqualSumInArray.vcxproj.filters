@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CapitalizeFirstLetterOfEachWord.cpp">
+    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindEqualSumInArray\FindEqualSumInArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
