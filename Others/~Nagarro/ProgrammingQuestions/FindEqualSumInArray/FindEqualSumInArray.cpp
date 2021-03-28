@@ -9,20 +9,32 @@ Example -
 {1,3,4,7}->no subset
 */
 
+// C++ implementation of the approach
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
+#include<vector>
+#include<map>
+using namespace std;
+void findEqualSumPairs(int A[], int n) {
+	map<int, vector<pair<int, int> > >map1;
+	for (int i = 0; i < n - 1; i++) {
+		for (int j = i + 1; j < n; j++) {
+			pair<int, int> p = make_pair(A[i], A[j]);
+			map1[A[i] + A[j]].push_back(p);
+		}
+	}
+	for (auto value = map1.begin(); value != map1.end(); value++) {
+		if (value->second.size() > 1) {
+			for (int i = 0; i < value->second.size(); i++) {
+				cout << "[ " << value->second[i].first << ", " << value->second[i].second << "] ";
+			}
+			cout << "have sum : " << value->first << endl;
+		}
+	}
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int main() {
+	int A[] = { 6, 4, 12, 10, 22,11, 8, 2 };
+	int n = sizeof(A) / sizeof(A[0]);
+	cout << "Pairs with same sum are : \n";
+	findEqualSumPairs(A, n);
+	return 0;
+}
