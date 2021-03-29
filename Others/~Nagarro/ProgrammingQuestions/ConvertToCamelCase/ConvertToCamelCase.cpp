@@ -8,33 +8,30 @@
 #include <string>
 using namespace std;
 
-char* modify_variableName(char* inputStr)
+char* modify_variableName(char* str)
 {
-	if (inputStr == NULL)
-		return inputStr;
+	if (str == NULL)
+		return str;
 
-	int len = strlen(inputStr);
-	char *outValue = new char[len + 1];
-	memset(outValue, '\0', sizeof(outValue));
+	int len = strlen(str);
+	char* newstr = new char[len + 1];
+	memset(newstr, '\0', sizeof(newstr));
 
-	char* nextToekn = strtok(inputStr, "_");
-	outValue = strcat(outValue, nextToekn);
+	char* nextToken = strtok(str, "_");
+	if (nextToken != NULL) strcat(newstr, nextToken);
 
-	while (nextToekn)
+	while (nextToken)
 	{
-		//cout << nextToekn << endl;
-		nextToekn = strtok(NULL, "_");
+		nextToken = strtok(NULL, "_");
 
-		if (nextToekn != NULL)
+		if (nextToken != NULL)
 		{
-			if (nextToekn[0] >= 'a' && nextToekn[0] <= 'z')
-				nextToekn[0] -= 32;
-
-			outValue = strcat(outValue, nextToekn);
+			if (nextToken[0] >= 'a' && nextToken[0] <= 'z')
+				nextToken[0] -= 32;
+			strcat(newstr, nextToken);
 		}
-				
 	}
-	return outValue;
+	return newstr;
 }
 
 
@@ -60,10 +57,31 @@ string modify_variableName2(string inputStr)
 
 int main()
 {
-	char str[] = "hello__World_where_are_you_";
-	cout << endl << "modify_variableName = " << modify_variableName(str);
+	char str[] = "hello__World_where__are_you_";
+	//cout << endl << "modify_variableName = " << modify_variableName(str);
 
-	string str2 = "hello__World_where_are_you_";
-	cout << endl << "modify_variableName2 = " << modify_variableName2(str2);
+	//string str2 = "hello__World_where_are_you_";
+	//cout << endl << "modify_variableName2 = " << modify_variableName2(str2);
+
+	int len = strlen(str);
+	char* newstr = new char[len + 1];
+	memset(newstr, '\0', sizeof(newstr));
+
+	char* nextToken = strtok(str, "_");
+	if (nextToken != NULL) strcat(newstr, nextToken);
+
+	while (nextToken)
+	{
+		nextToken = strtok(NULL, "_");
+
+		if (nextToken != NULL)
+		{
+			if (nextToken[0] >= 'a' && nextToken[0] <= 'z')
+				nextToken[0] -= 32;
+			strcat(newstr, nextToken);
+		}	
+	}
+
+	cout << newstr << endl;
 }
 
