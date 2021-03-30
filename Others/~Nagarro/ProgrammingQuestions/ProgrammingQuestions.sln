@@ -27,7 +27,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Derangement", "Derangement\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConvertToCamelCaseAndRemoveUnderscore", "ConvertToCamelCase\ConvertToCamelCase.vcxproj", "{8995B7BE-0307-4BEB-8264-3A2B5052A760}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindCharacterFrequencyAfterEachCharacter", "FindCharacterFrequencyAfterEachCharacter\FindCharacterFrequencyAfterEachCharacter.vcxproj", "{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindCharacterFrequencyUsingArray", "FindCharacterFrequencyAfterEachCharacter\FindCharacterFrequencyAfterEachCharacter.vcxproj", "{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindCharacterFrequencyUsingBinaryTree", "FindCharacterFrequencyUsingBinaryTree\FindCharacterFrequencyUsingBinaryTree.vcxproj", "{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,14 @@ Global
 		{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}.Release|x64.Build.0 = Release|x64
 		{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}.Release|x86.ActiveCfg = Release|Win32
 		{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}.Release|x86.Build.0 = Release|Win32
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Debug|x64.ActiveCfg = Debug|x64
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Debug|x64.Build.0 = Debug|x64
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Debug|x86.ActiveCfg = Debug|Win32
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Debug|x86.Build.0 = Debug|Win32
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Release|x64.ActiveCfg = Release|x64
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Release|x64.Build.0 = Release|x64
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Release|x86.ActiveCfg = Release|Win32
+		{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

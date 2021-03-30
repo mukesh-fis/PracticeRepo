@@ -8,6 +8,7 @@
 #include <string>
 using namespace std;
 
+//Method 1
 char* modify_variableName(char* str)
 {
 	if (str == NULL)
@@ -34,6 +35,7 @@ char* modify_variableName(char* str)
 	return newstr;
 }
 
+//Method 2
 
 string modify_variableName2(string inputStr)
 {
@@ -57,31 +59,10 @@ string modify_variableName2(string inputStr)
 
 int main()
 {
+	string str2 = "hello__World_where_are_you_";
+	cout << endl << "modify_variableName2 = " << modify_variableName2(str2);
+
 	char str[] = "hello__World_where__are_you_";
-	//cout << endl << "modify_variableName = " << modify_variableName(str);
-
-	//string str2 = "hello__World_where_are_you_";
-	//cout << endl << "modify_variableName2 = " << modify_variableName2(str2);
-
-	int len = strlen(str);
-	char* newstr = new char[len + 1];
-	memset(newstr, '\0', sizeof(newstr));
-
-	char* nextToken = strtok(str, "_");
-	if (nextToken != NULL) strcat(newstr, nextToken);
-
-	while (nextToken)
-	{
-		nextToken = strtok(NULL, "_");
-
-		if (nextToken != NULL)
-		{
-			if (nextToken[0] >= 'a' && nextToken[0] <= 'z')
-				nextToken[0] -= 32;
-			strcat(newstr, nextToken);
-		}	
-	}
-
-	cout << newstr << endl;
+	cout << endl << "modify_variableName = " << modify_variableName(str);
 }
 

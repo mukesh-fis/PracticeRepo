@@ -96,7 +96,7 @@ char* GetCharFrequencyInOrderUsingArrayCStyle(char* str)
 int main()
 {
 	string str = "geeksforgeeks";
-	cout << GetCharFrequencyInOrder(str) << endl;;
+	cout << GetCharFrequencyInOrder(str) << endl;
 	cout << GetCharFrequencyInOrderUsingArray(str) << endl;
 
 	char p[] = "geeksforgeeks";
