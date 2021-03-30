@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\MatrixRotationBy90Degree\MatrixRotationBy90Degree.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{2CDA568A-C4FF-47E9-AB51-F6F2DEAB2568}</ProjectGuid>
@@ -150,9 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\MatrixRotationBy90Degree\MatrixRotationBy90Degree.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\Derangement\Derangement.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{16EBDD1F-BCD7-4AA0-B35A-62B44286225D}</ProjectGuid>
@@ -150,9 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\Derangement\Derangement.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FindLinkedListMiddleNode\FindLinkedListMiddleNode.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{8DE16BB1-4E3D-4F04-988A-B22A592844FB}</ProjectGuid>
@@ -150,9 +153,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindLinkedListMiddleNode\FindLinkedListMiddleNode.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

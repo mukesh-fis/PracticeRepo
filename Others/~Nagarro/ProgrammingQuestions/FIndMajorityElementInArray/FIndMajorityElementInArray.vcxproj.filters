@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp">
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp">
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

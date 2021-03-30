@@ -18,6 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{571B8163-F6AD-416B-9D9C-B1E027B5A5E1}</ProjectGuid>
@@ -150,10 +154,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
