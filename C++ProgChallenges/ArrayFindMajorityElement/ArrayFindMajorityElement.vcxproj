@@ -19,8 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:C++ProgChallenges/ArrayFindMajorityElement/ArrayFindMajorityElement.vcxproj
     <ClCompile Include="BST.cpp" />
     <ClCompile Include="FindMajorityElementInArray.cpp" />
+=======
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp" />
+>>>>>>> 405e590e058110ec2d03c9c30aef50436919dbcf:Others/~Nagarro/ProgrammingQuestions/FIndMajorityElementInArray/FIndMajorityElementInArray.vcxproj
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
