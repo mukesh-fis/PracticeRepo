@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FindNthPrimeNumber\FindNthPrimeNumber.cpp">
+    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindNthPrimeNumber\FindNthPrimeNumber.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

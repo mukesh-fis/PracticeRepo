@@ -19,17 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindCharacterFrequencyUsingBinaryTree\CharFrequencyUsingBST.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindCharacterFrequencyUsingBinaryTree\BinaryTree.h" />
+<<<<<<< HEAD:C++ProgChallenges/ArrayFindMajorityElement/ArrayFindMajorityElement.vcxproj
+    <ClCompile Include="BST.cpp" />
+    <ClCompile Include="FindMajorityElementInArray.cpp" />
+=======
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\..\..\%40%40DoNotDelete\~CodingAreaNeverDelete\~GitHubPractice\Cpp11\PracticeRepo\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp" />
+>>>>>>> 405e590e058110ec2d03c9c30aef50436919dbcf:Others/~Nagarro/ProgrammingQuestions/FIndMajorityElementInArray/FIndMajorityElementInArray.vcxproj
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{D394AB53-DCC0-4A01-8E49-1DFC3054ECCF}</ProjectGuid>
+    <ProjectGuid>{571B8163-F6AD-416B-9D9C-B1E027B5A5E1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FindCharacterFrequencyUsingBinaryTree</RootNamespace>
+    <RootNamespace>FIndMajorityElementInArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>ArrayFindMajorityElement</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

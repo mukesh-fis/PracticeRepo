@@ -19,15 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FindCharacterFrequencyAfterEachCharacter\source.cpp" />
+    <ClCompile Include="ArrayFindEqualSumPairs.cpp" />
+    <ClCompile Include="FindEqualArrayDynamicProgrammingcpp.cpp" />
+    <ClCompile Include="FindEqualSumBruteForce.cpp" />
+    <ClCompile Include="FindEqualSumSubsetEqualToAGivenSum.h" />
+    <ClCompile Include="FindEqualSumSubsets.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{8F450EEF-5C0D-43DC-9700-C2A311BC80F0}</ProjectGuid>
+    <ProjectGuid>{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FindCharacterFrequencyAfterEachCharacter</RootNamespace>
+    <RootNamespace>FindEqualSumInArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-    <ProjectName>FindCharacterFrequencyUsingArray</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -95,7 +98,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
