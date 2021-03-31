@@ -18,11 +18,18 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ArrayFindEqualSumPairs.cpp" />
+    <ClCompile Include="FindEqualArrayDynamicProgrammingcpp.cpp" />
+    <ClCompile Include="FindEqualSumBruteForce.cpp" />
+    <ClCompile Include="FindEqualSumSubsetEqualToAGivenSum.h" />
+    <ClCompile Include="FindEqualSumSubsets.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{571B8163-F6AD-416B-9D9C-B1E027B5A5E1}</ProjectGuid>
+    <ProjectGuid>{70F68515-6E32-4AC1-8FE7-FC6CB2FD16F5}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FIndMajorityElementInArray</RootNamespace>
+    <RootNamespace>FindEqualSumInArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,10 +157,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\BST.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\%40Educational Material\~GitHub\Others\~Nagarro\ProgrammingQuestions\FIndMajorityElementInArray\FIndMajorityElementInArray.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

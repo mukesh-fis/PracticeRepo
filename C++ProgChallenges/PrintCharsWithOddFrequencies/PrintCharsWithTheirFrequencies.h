@@ -84,7 +84,7 @@ char* GetCharFrequencyInOrderUsingArrayCStyle(char* str)
 	{
 		if (letterPos[str[i] - 'a'] > 0)
 		{
-			sprintf(tempStr, "%c%d", str[i], (letterPos[str[i] - 'a']));
+			sprintf_s(tempStr, "%c%d", str[i], (letterPos[str[i] - 'a']));
 			strcat(resultStr, tempStr);
 			letterPos[str[i] - 'a'] = 0;
 		}
@@ -93,12 +93,3 @@ char* GetCharFrequencyInOrderUsingArrayCStyle(char* str)
 	return resultStr;
 }
 
-int main()
-{
-	string str = "geeksforgeeks";
-	cout << GetCharFrequencyInOrder(str) << endl;
-	cout << GetCharFrequencyInOrderUsingArray(str) << endl;
-
-	char p[] = "geeksforgeeks";
-	cout << GetCharFrequencyInOrderUsingArrayCStyle(p) << endl;
-}
