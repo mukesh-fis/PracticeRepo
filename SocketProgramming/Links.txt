@@ -1,0 +1,7 @@
+https://www.binarytides.com/winsock-socket-programming-tutorial/
+
+https://www.codeproject.com/Articles/13071/Programming-Windows-TCP-Sockets-in-C-for-the-Begin 
+
+https://docs.microsoft.com/en-us/windows/win32/winsock/getting-started-with-winsock
+
+https://www.winsocketdotnetworkprogramming.com/winsock2programming/
