@@ -140,7 +140,7 @@ int main()
 	*/
 	
 	sockaddr_in server;
-	server.sin_addr.s_addr = inet_addr("10.236.165.102");   //10.236.165.102
+	server.sin_addr.s_addr = inet_addr("127.0.0.1");   //10.236.165.102
 	server.sin_family = AF_INET;
 	server.sin_port = htons(80);
 
