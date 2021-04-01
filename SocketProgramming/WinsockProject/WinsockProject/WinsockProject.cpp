@@ -109,41 +109,17 @@ int main()
 				- Only supported if the Reliable Multicast Protocol is installed.
 	*/
 
-	SOCKET s = INVALID_SOCKET;
-
-	struct addrinfo *result = NULL,
-					*ptr = NULL,
-					 hints;
-
-	ZeroMemory(&hints, sizeof(hints));
-	hints.ai_family = AF_INET;
-	hints.ai_socktype = SOCK_STREAM;
-	hints.ai_protocol = IPPROTO_TCP;
-	//hints.ai_addr = inet_addr( "10.236.165.102");
-
-	// Attempt to connect to the first address returned by
-	// the call to getaddrinfo
-	ptr = &hints;
-
-	// Create a SOCKET for connecting to server
-	s = socket(ptr->ai_family, ptr->ai_socktype,
-		ptr->ai_protocol);
-
-	if ((s == INVALID_SOCKET))
+	SOCKET s;
+	if ((s = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) == INVALID_SOCKET))
 	{
 		cout << "Socket could not be created. Error - " << WSAGetLastError();
-		freeaddrinfo(result);
-		WSACleanup();
 		return 1;
 	}
 	cout << "Socket created" << endl;
 
 	/*
 	We have created a socket successfully. But what next? 
-	Next we shall try to connect to some server using this socket. We can connect to www.fisandme.com.
-	To get the ip, open command prompt and type
-
-	ping www.fisandme.com
+	Next we shall try to connect to some server using this socket. We can connect to www.google.com.
 
 	We connect to a remote server on a certain port number. So we need 2 things , IP address and port number to connect to.
 	To connect to a remote server we need to do a couple of things. 
@@ -163,14 +139,13 @@ int main()
 	server.sin_addr.s_addr = inet_addr("74.125.235.20");
 	*/
 	
-	//struct sockaddr_in server;
-	//server.sin_addr.s_addr = inet_addr("10.236.165.102");  // ip address for fisandme.com
-	//server.sin_family = AF_INET;
-	//server.sin_port = htons(80);  //80 for http
+	sockaddr_in server;
+	server.sin_addr.s_addr = inet_addr("10.236.165.102");   //10.236.165.102
+	server.sin_family = AF_INET;
+	server.sin_port = htons(80);
 
 	//Connect to remote server
-	int iResult = connect(s, ptr->ai_addr, (int)ptr->ai_addrlen);
-	if (connect(s, (struct sockaddr *)&server, sizeof(server)) < 0)
+	if (connect(s, (struct sockaddr *)&server, sizeof(server)) != 0)
 	{
 		cout << "connect Error - " << WSAGetLastError() << endl;
 		return 1;
