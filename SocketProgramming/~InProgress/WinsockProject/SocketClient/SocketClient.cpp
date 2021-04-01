@@ -27,7 +27,7 @@ int __cdecl main(int argc, char **argv)
 					*ptr = NULL,
 					hints;
 
-	const char sendbuf[DEFAULT_BUFLEN] = "Hi there!!! This is client...";
+	const char sendbuf[DEFAULT_BUFLEN] = "Client >> Hi Server!";
 	char recvbuf[DEFAULT_BUFLEN] = { '\0' };
 	int iResult;
 	int recvbuflen = DEFAULT_BUFLEN;
@@ -89,28 +89,24 @@ int __cdecl main(int argc, char **argv)
 	}
 
 	// Send an initial buffer
-	iResult = send(ConnectSocket, sendbuf, (int)strlen(sendbuf), 0);
-
-	if (iResult == SOCKET_ERROR) {
-		printf("send failed with error: %d\n", WSAGetLastError());
-		closesocket(ConnectSocket);
-		WSACleanup();
-		return 1;
-	}
-	printf("Sent - %s\n", sendbuf);
-	//printf("Bytes Sent: %ld\n", iResult);
-
-	// shutdown the connection since no more data will be sent
-	iResult = shutdown(ConnectSocket, SD_SEND);
-	if (iResult == SOCKET_ERROR) {
-		printf("shutdown failed with error: %d\n", WSAGetLastError());
-		closesocket(ConnectSocket);
-		WSACleanup();
-		return 1;
-	}
+	//iResult = send(ConnectSocket, sendbuf, (int)strlen(sendbuf), 0);
 
 	// Receive until the peer closes the connection
 	do {
+		string str = "";
+		cout << "Client >> ";
+		getline(cin, str);
+
+		iResult = send(ConnectSocket, str.c_str(), (int)str.length(), 0);
+		cout << "Sent: " << str << endl;
+
+		if (iResult == SOCKET_ERROR) {
+			printf("send failed with error: %d\n", WSAGetLastError());
+			closesocket(ConnectSocket);
+			WSACleanup();
+			return 1;
+		}
+		printf("Client >> %s", sendbuf);
 
 		iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
 
@@ -120,13 +116,21 @@ int __cdecl main(int argc, char **argv)
 			cout << "Received: " << string(recvbuf) << endl;
 		}
 
-		else if (iResult == 0)
-			printf("Connection closed\n");
+		cin.clear();
+		//cin.ignore(DEFAULT_BUFLEN, '\n');
 
-		else
-			printf("recv failed with error: %d\n", WSAGetLastError());
+
 
 	} while (iResult > 0);
+
+	// shutdown the connection since no more data will be sent
+	iResult = shutdown(ConnectSocket, SD_SEND);
+	if (iResult == SOCKET_ERROR) {
+		printf("shutdown failed with error: %d\n", WSAGetLastError());
+		closesocket(ConnectSocket);
+		WSACleanup();
+		return 1;
+	}
 
 	// cleanup
 	closesocket(ConnectSocket);

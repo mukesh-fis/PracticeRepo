@@ -31,7 +31,7 @@ int __cdecl main(void)
 
 	int iSendResult;
 	char recvbuf[DEFAULT_BUFLEN] = {'\0'};
-	char sendbuf[DEFAULT_BUFLEN] = { '\0' };
+	char sendbuf[DEFAULT_BUFLEN] = {'\0' };
 	int recvbuflen = DEFAULT_BUFLEN;
 
 	// Initialize Winsock
@@ -98,27 +98,35 @@ int __cdecl main(void)
 
 	// Receive until the peer shuts down the connection
 	do {
-
 		iResult = recv(ClientSocket, recvbuf, recvbuflen, 0);
 		if (iResult > 0) {
 
 			string str(recvbuf);  //convert to str so that nulls at the end donot appear in output
-			cout << "Received:" << str << endl;
+			cout << "Received:" << str << endl << endl;;
 			//printf("Bytes received: %d\n", iResult);
+			cin.clear();
+			cin.ignore(DEFAULT_BUFLEN, '\n');
 
 			// Echo the buffer back to the sender
-			iSendResult = send(ClientSocket, recvbuf, iResult, 0);
+			str = "";
+			cout << "\nServer >> ";
+			getline(cin, str);
+			iSendResult = send(ClientSocket, str.c_str(), (int)str.length(), 0);
+
 			if (iSendResult == SOCKET_ERROR) {
 				printf("send failed with error: %d\n", WSAGetLastError());
 				closesocket(ClientSocket);
 				WSACleanup();
 				return 1;
 			}
-			printf("Bytes sent: %d\n", iSendResult);
+			cout << "Sent: " << str << endl;
 		}
 		else if (iResult == 0)
+		{
 			printf("Connection closing...\n");
-		else {
+		}
+		else 
+		{
 			printf("recv failed with error: %d\n", WSAGetLastError());
 			closesocket(ClientSocket);
 			WSACleanup();
