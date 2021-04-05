@@ -63,11 +63,11 @@ string GetCharFrequencyInOrderUsingArray(string str)
 }
 
 //Sol-3 Using char Array Frequency C-Style
-char* GetCharFrequencyInOrderUsingArrayCStyle(char* str)
+char* GetCharFrequencyInOrderUsingArrayCStyle(char* input1)
 {
-	if (str == NULL) return str;
+	if (input1 == NULL) return input1;
 
-	char* resultStr = new char[strlen(str) + 1];
+	char* resultStr = new char[strlen(input1) + 1];
 	int   letterPos[26];
 	char  tempStr[4];
 
@@ -75,18 +75,18 @@ char* GetCharFrequencyInOrderUsingArrayCStyle(char* str)
 	memset(resultStr, 0, sizeof(resultStr));
 	memset(tempStr,   0, sizeof(tempStr));
 
-	for (int i = 0; i< strlen(str); i++)
+	for (int i = 0; i< strlen(input1); i++)
 	{
-		letterPos[str[i] - 'a']++;
+		letterPos[input1[i] - 'a']++;
 	}
 
-	for (int i = 0; i < strlen(str); i++)
+	for (int i = 0; i < strlen(input1); i++)
 	{
-		if (letterPos[str[i] - 'a'] > 0)
+		if (letterPos[input1[i] - 'a'] > 0)
 		{
-			sprintf_s(tempStr, "%c%d", str[i], (letterPos[str[i] - 'a']));
+			sprintf_s(tempStr, "%c%d", input1[i], (letterPos[input1[i] - 'a']));
 			strcat(resultStr, tempStr);
-			letterPos[str[i] - 'a'] = 0;
+			letterPos[input1[i] - 'a'] = 0;
 		}
 	}
 

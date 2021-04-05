@@ -47,20 +47,20 @@ public:
    // a: input array
    // size: size of input array
    //Note: This approach uses two loops and complexity is O(N^2)
-	int majorityElement(int a[], int size)
+	int majorityElement(int input2[], int input1)
 	{
-		for (int ii = 0; ii <= size / 2 + 1; ii++)
+		for (int ii = 0; ii <= input1 / 2 + 1; ii++)
 		{
 			int cnt_i = 0;
 
-			for (int j = 0; j < size; ++j)
+			for (int j = 0; j < input1; ++j)
 			{
-				if (a[ii] == a[j]) cnt_i++;
+				if (input2[ii] == input2[j]) cnt_i++;
 			}
 
-			if (cnt_i > size / 2)
+			if (cnt_i > input1 / 2)
 			{
-				return a[ii];
+				return input2[ii];
 			}
 
 		}

@@ -19,7 +19,8 @@ char* modify_variableName(char* str)
 	memset(newstr, '\0', sizeof(newstr));
 
 	char* nextToken = strtok(str, "_");
-	if (nextToken != NULL) strcat(newstr, nextToken);
+	if (nextToken != NULL)
+		strcat(newstr, nextToken);
 
 	while (nextToken)
 	{
@@ -57,12 +58,61 @@ string modify_variableName2(string inputStr)
 	return outValue;
 }
 
+const char* modify_variableName3(char* input)
+{
+	string inputStr(input);
+
+	if (inputStr.length() == 0)
+		return NULL;
+
+	string *outValue = new string();
+	int underscoreFound = 0;
+	underscoreFound = inputStr.find("_");
+
+	if (underscoreFound != string::npos)  //string contains underscore, so convert to camelcase
+	{
+		for (int i = 0; i < inputStr.length(); i++)
+		{
+			if (inputStr[i] == '_')	continue;
+
+			if (i >= 1 && inputStr[i - 1] == '_')
+				inputStr[i] = toupper(inputStr[i]);
+
+			*outValue += inputStr[i];
+		}
+	}
+	else //convert to underscore format from camel case
+	{
+		for (int i = 0; i < inputStr.length(); i++)
+		{
+			if (inputStr[i] >= 'A' && inputStr[i] <= 'Z' && i >= 1)
+			{
+				*outValue += "_";
+				*outValue += tolower(inputStr[i]);
+			}
+			else
+				*outValue += inputStr[i];
+		}
+		*outValue += "\0";
+	}
+
+	return (*outValue).c_str();
+}
+
 int main()
 {
 	string str2 = "hello__World_where_are_you_";
 	cout << endl << "modify_variableName2 = " << modify_variableName2(str2);
 
-	char str[] = "hello__World_where__are_you_";
-	cout << endl << "modify_variableName = " << modify_variableName(str);
+	{
+		char str[] = "modify_Variable";
+		cout << endl << "modify_variableName = " << modify_variableName(str);
+	}
+
+	{
+		char str[] = "modifyVariable";
+		string outVal = modify_variableName3(str);
+		cout << endl << "modifyVariable = " << modify_variableName3(str);
+	}
 }
 
