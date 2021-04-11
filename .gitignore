@@ -18,6 +18,7 @@
 *.idb
 .signature.p7s
 UpgradeLog.htm
+DB.Browser.for.SQLite-3.12.1-win32-v2.zip
 
 dlldata.c
 site.h
